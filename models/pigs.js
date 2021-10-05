@@ -1,10 +1,13 @@
 
 
 module.exports = class Pig {
-    constructor(id, name) {
+    constructor(id, name, description) {
         this.id = id;
         this.name = name;
-        this.description = "";
-        this.photos = [];
+        this.description = description;
+        
+    }
+    save() {
+        console.log(`id is ${this.id} name is ${this.name} description is ${this.description}`);
     }
 }

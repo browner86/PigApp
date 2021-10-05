@@ -1,0 +1,24 @@
+<%- include('./includes/head.ejs') %>
+    
+</head>
+
+<body>
+    
+
+    <main>
+       <h1><%= pageH1 %></h1>
+       <form action="/add-pig" method="POST">
+        <div class="form-control">
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name">
+
+            <label for="description">Description</label>
+            <textarea name="description" id="description" rows="5"></textarea>   
+
+            
+        </div>
+        <button type="submit">Add pig</button>
+    
+    </form>
+    </main>
+<%- include('./includes/end.ejs') %>
