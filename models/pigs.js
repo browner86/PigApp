@@ -1,4 +1,4 @@
-
+piglist =[];
 
 module.exports = class Pig {
     constructor(id, name, description) {
@@ -8,6 +8,7 @@ module.exports = class Pig {
         
     }
     save() {
-        console.log(`id is ${this.id} name is ${this.name} description is ${this.description}`);
+        piglist.push(this)
+        console.log(piglist);
     }
 }
